@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'todolist',
     'corsheaders',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# CORS settings
 CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+]
+
+CSRF_COOKIE_DOMAIN = 'http://localhost:3000'
 
 ROOT_URLCONF = 'todoproject.urls'
 
