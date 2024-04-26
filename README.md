@@ -1,22 +1,17 @@
 
 # React and Django Todo Project
 
-This project is an implementation of a Todo application using Django as the backend and React for the frontend. The React app (`todo-react-app`) is set up alongside Django applications to create a full-stack web application that manages todo lists.
+This project is an implementation of a Todo application using Django Rest Framework as the backend and React for the frontend. The React app (`todo-react-app`) is set up alongside Django applications to create a full-stack web application that manages todo lists.
 
 ## Features
 
 - **CRUD Operations**: Create, Read, Update, and Delete Todos.
+- **API Endpoints**
+    - /api/todos/
+    - /api/todos/<int:pk>/
+- **GraphQL** Implemented GraphQL using graphene Django
 - **Real-Time Updates**: Utilizes efficient communication between the frontend and backend to ensure state is synchronized across all clients.
-
-### Assumptions and Improvements
-
-- **Assumptions**:
-  - The user is familiar with basic operations of a todo application.
-  - Users require real-time update capabilities without needing to refresh their browsers.
-
-- **Improvements**:
-  - Implementing WebSocket for real-time updates could enhance user experience by providing instant updates across sessions.
-  - Adding user authentication to allow multiple users to manage their personal todo lists securely.
+- **APOLLO Client** Integrated Apollo Client in React to fetch and manage data in GraphQL API.
 
 ## Demo
 
@@ -83,6 +78,10 @@ To run the test cases for both the backend and frontend:
 cd Django-Todo-Project
 python manage.py test
 ```
+
+## Note
+
+React is using GraphQL to fetch and manage the data from the backend but we have also implemented API endpoints in `view.py` file which can be hit from postman.
 
 
 ## Conclusion
