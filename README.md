@@ -21,8 +21,8 @@ This project is an implementation of a Todo application using Django as the back
 ## Demo
 
 Here you can include a GIF or a set of screenshots demonstrating the application's functionality:
+<img width="750" alt="image" src="https://github.com/Noman1555/Django-Todo-Project/assets/164897336/03dad354-d99f-4a2d-adef-fd3a77772604">
 
-(link)
 
 ## Local Setup Guidelines
 
